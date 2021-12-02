@@ -70,7 +70,16 @@ const NavBar = () => {
                     className="btn-margin"
                     onClick={() =>
                       loginWithRedirect({
-                        fragment: "culture=en-us&aff_id=0",
+                        fragment: `culture=en-us&aff_id=105`,
+                        // &aai=${JSON.stringify(
+                        //   {
+                        //     ea: "value",
+                        //     cc: "value",
+                        //   }
+                        // )}`,
+                        // appState: {
+                        //   returnTo: "?culture=en-gb&aff_id=105",
+                        // },
                       })
                     }
                   >
