@@ -80,6 +80,7 @@ const NavBar = () => {
                         // appState: {
                         //   returnTo: "?culture=en-gb&aff_id=105",
                         // },
+                        ui_locales: 'fr-FR'
                       })
                     }
                   >

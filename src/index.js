@@ -17,9 +17,13 @@ const onRedirectCallback = (appState) => {
 // for a full list of the available properties on the provider
 const config = getConfig();
 
+// REACT_APP_AUTH0_DOMAIN=live-from.us.auth0.com
+// REACT_APP_AUTH0_CLIENT_ID=23PlMK9EFDLbO0bxIfKoYLr8M39qS78E
+// domain: "mcafee-mpc.us.auth0.com",
+// clientId: "Pb3dZk2z58fio3lSqH41Iau0eqTt0BoX",
 const providerConfig = {
-  domain: "mcafee-mpc.us.auth0.com",
-  clientId: "Pb3dZk2z58fio3lSqH41Iau0eqTt0BoX",
+  domain: "live-from.us.auth0.com",
+  clientId: "23PlMK9EFDLbO0bxIfKoYLr8M39qS78E",
   ...(config.audience ? { audience: config.audience } : null),
   redirectUri: window.location.origin,
   onRedirectCallback,
